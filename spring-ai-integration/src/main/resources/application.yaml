@@ -1,3 +1,7 @@
 spring:
   application:
     name: spring-ai-integration
+
+  ai:
+    openai:
+      apiKey: ${OPENAI_SECRET_KEY:}
