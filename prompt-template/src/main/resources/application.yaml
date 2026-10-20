@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: multi-model-agent
+
+  ai:
+    openai:
+      apiKey: ${OPENAI_SECRET_KEY:}
+
+    ollama:
+      chat:
+        model: llama3.2
+
+    chat:
+      client:
+        enabled: false
