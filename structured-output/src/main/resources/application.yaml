@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: multi-model-agent
+
+  ai:
+    openai:
+      apiKey: ${OPENAI_SECRET_KEY:}
+
+    ollama:
+      chat:
+        model: llama3.2
+
+    chat:
+      client:
+        enabled: false
+
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
+
+
+custom:
+  openai:
+    model: gpt-5.4-mini
+    temperature: 0.8
+    maxTokens: 200
+    frequencyPenalty: 0.3
+    presencePenalty: 0.4
+    topP: 1.0
+    topK: 0
+    stopSequences: []
